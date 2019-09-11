@@ -1,0 +1,42 @@
+javascirpt:
+//
+go();
+function go() {
+    var main = document.querySelector(".btn_stage_3");
+    var unit_btn = $("#unit_live_battle").attr("href");
+    var btn_jp = document.querySelector(".button_attack_jp_3");
+    var back_btn = document.querySelector(".btn_decision_line_2");
+    var btn_event = document.querySelector(".button_attack_eventhalf_3");
+    var btn_normal = document.querySelector(".button_attack_half_3");
+    var do_btn = document.querySelector("#play_button");
+    if (main != null) {
+        main.click();
+    }
+    if (do_btn != null) {
+        do_btn.click();
+    }
+    if (unit_btn != null && unit_btn != '#') {
+        location.href = unit_btn;
+    }
+    if (back_btn != null) {
+        location.href = 'http://sp.pf.mbga.jp/12008305/?guid=ON&amp;url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fevent_jam%3Fl_frm%3DEvent_jam_index_1%26rnd%3D923670674';
+    }
+    if (btn_event != null) {
+        btn_event.click();
+        setTimeout(function () {
+            location.reload();
+        }, 100);
+    } else if (btn_normal != null) {
+        btn_normal.click();
+        setTimeout(function () {
+            location.reload();
+        }, 100);
+    } else if (btn_jp != null) {
+        btn_jp.click();
+        setTimeout(function () {
+            location.reload();
+        }, 100);
+    }
+}
+//
+;
